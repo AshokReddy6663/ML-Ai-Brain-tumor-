@@ -1,0 +1,44 @@
+Model: brain_tumor_mobilenet_v2.keras
+Dataset: testing/
+Number of test images: 80
+Accuracy: 0.9125
+Precision (Macro): 0.9256
+Recall (Macro): 0.9125
+F1-score (Macro): 0.9110
+F1-score (Weighted): 0.9110
+
+Class Distribution:
+Glioma: 20
+Meningioma: 20
+Notumor: 20
+Pituitary: 20
+
+Per-class results:
+
+Glioma:
+Precision: 1.0000
+Recall: 0.9500
+F1: 0.9744
+
+Meningioma:
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+
+Notumor:
+Precision: 0.9333
+Recall: 0.7000
+F1: 0.8000
+
+Pituitary:
+Precision: 0.7692
+Recall: 1.0000
+F1: 0.8696
+
+Confusion matrix:
+True \ Pred | glio | meni | notu | pitu
+----------------------------------------
+glio        |   19 |    0 |    1 |    0
+meni        |    0 |   20 |    0 |    0
+notu        |    0 |    0 |   14 |    6
+pitu        |    0 |    0 |    0 |   20

@@ -1,0 +1,2406 @@
+{
+  "candidate_path": "brain_tumor_mobilenet_v2_improved.keras",
+  "best_epoch": 2,
+  "best_val_loss": 1.355340600013733,
+  "best_val_accuracy": 0.6200000047683716,
+  "history": {
+    "loss": [
+      0.6166439652442932,
+      0.33537811040878296,
+      0.19055616855621338,
+      0.16259734332561493,
+      0.1744905263185501,
+      0.14288446307182312,
+      0.10391680151224136,
+      0.0945054292678833,
+      0.35762450098991394,
+      0.09796885401010513,
+      0.07240095734596252,
+      0.07929550856351852,
+      0.04280656576156616,
+      0.05520477518439293,
+      0.03356315940618515,
+      0.022343235090374947,
+      0.0457250140607357,
+      0.012621710076928139,
+      0.025638971477746964,
+      0.00938652828335762,
+      0.009747063741087914,
+      0.01531129702925682,
+      0.009646381251513958,
+      0.010483983904123306,
+      0.007464561611413956
+    ],
+    "val_loss": [
+      1.58201003074646,
+      1.355340600013733,
+      1.5792884826660156,
+      1.5903267860412598,
+      1.9638421535491943,
+      1.8589073419570923,
+      1.9253321886062622,
+      2.108215093612671,
+      2.8969204425811768,
+      2.9176559448242188,
+      2.8226723670959473,
+      3.0799145698547363,
+      3.1889259815216064,
+      2.8303396701812744,
+      3.3273606300354004,
+      2.7960615158081055,
+      2.5281553268432617,
+      2.684506416320801,
+      2.7397027015686035,
+      2.7261962890625,
+      2.7647864818573,
+      2.7170419692993164,
+      2.681469202041626,
+      2.6087145805358887,
+      2.5796778202056885
+    ],
+    "accuracy": [
+      0.8134110569953918,
+      0.9008746147155762,
+      0.9402332305908203,
+      0.9562682509422302,
+      0.9489796161651611,
+      0.9591836929321289,
+      0.966472327709198,
+      0.9723032116889954,
+      0.8979591727256775,
+      0.967930018901825,
+      0.9781340956687927,
+      0.9723032116889954,
+      0.9883381724357605,
+      0.9825072884559631,
+      0.9868804812431335,
+      0.9970845580101013,
+      0.9854227304458618,
+      0.9970845580101013,
+      0.9941691160202026,
+      0.9985422492027283,
+      0.9970845580101013,
+      0.9985422492027283,
+      0.9970845580101013,
+      0.9956268072128296,
+      0.9985422492027283
+    ],
+    "val_accuracy": [
+      0.6349999904632568,
+      0.6200000047683716,
+      0.625,
+      0.5950000286102295,
+      0.5950000286102295,
+      0.5799999833106995,
+      0.5799999833106995,
+      0.5350000262260437,
+      0.5049999952316284,
+      0.5149999856948853,
+      0.5350000262260437,
+      0.5199999809265137,
+      0.5249999761581421,
+      0.5249999761581421,
+      0.5,
+      0.550000011920929,
+      0.550000011920929,
+      0.5400000214576721,
+      0.550000011920929,
+      0.5649999976158142,
+      0.550000011920929,
+      0.5699999928474426,
+      0.574999988079071,
+      0.574999988079071,
+      0.5799999833106995
+    ]
+  },
+  "evaluations": {
+    "candidate_independent": {
+      "title": "Candidate Model on Independent Test Set (160 images)",
+      "total": 160,
+      "accuracy": 0.58125,
+      "macro_precision": 0.7172754465790361,
+      "macro_recall": 0.58125,
+      "macro_f1": 0.5137798248263364,
+      "per_class": {
+        "glioma": {
+          "precision": 1.0,
+          "recall": 0.075,
+          "f1": 0.13953488372093023,
+          "support": 40
+        },
+        "meningioma": {
+          "precision": 0.6956521739130435,
+          "recall": 0.4,
+          "f1": 0.507936507936508,
+          "support": 40
+        },
+        "notumor": {
+          "precision": 0.7083333333333334,
+          "recall": 0.85,
+          "f1": 0.7727272727272727,
+          "support": 40
+        },
+        "pituitary": {
+          "precision": 0.46511627906976744,
+          "recall": 1.0,
+          "f1": 0.6349206349206349,
+          "support": 40
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          5,
+          9,
+          23
+        ],
+        [
+          0,
+          16,
+          5,
+          19
+        ],
+        [
+          0,
+          2,
+          34,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          40
+        ]
+      ],
+      "misclassified": [
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0019_jpg.rf.e5a2b5fe1281224dc9d5e44549649e68.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9998528361320496,
+          "probs": {
+            "glioma": 1.542234531370923e-05,
+            "meningioma": 0.00010997310164384544,
+            "notumor": 2.1808829842484556e-05,
+            "pituitary": 0.9998528361320496
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0053_jpg.rf.9e662bfab6b98377f7f39217891f987f.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.9324044585227966,
+          "probs": {
+            "glioma": 0.004119604825973511,
+            "meningioma": 0.006394009571522474,
+            "notumor": 0.9324044585227966,
+            "pituitary": 0.057081978768110275
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0186_jpg.rf.2915ec01fc8753393129b6b94456f30a.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.5012384653091431,
+          "probs": {
+            "glioma": 0.004839153494685888,
+            "meningioma": 0.012023832648992538,
+            "notumor": 0.48189860582351685,
+            "pituitary": 0.5012384653091431
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0195_jpg.rf.3d817902dacab6b9e1247905f3fb03c5.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.9812964797019958,
+          "probs": {
+            "glioma": 0.00933594536036253,
+            "meningioma": 0.001019161893054843,
+            "notumor": 0.9812964797019958,
+            "pituitary": 0.008348353207111359
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0225_jpg.rf.45ade558e23a82e6b04036be27474b27.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9715685844421387,
+          "probs": {
+            "glioma": 4.3105526856379583e-05,
+            "meningioma": 0.004481911193579435,
+            "notumor": 0.023906540125608444,
+            "pituitary": 0.9715685844421387
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0255_jpg.rf.c7f55e275f582aabd18e6dc79b6a5be9.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.7600569128990173,
+          "probs": {
+            "glioma": 0.04555831477046013,
+            "meningioma": 0.00017010452575050294,
+            "notumor": 0.7600569128990173,
+            "pituitary": 0.19421471655368805
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0259_jpg.rf.0c2e675b5f8ff07d8277ab1a3e5df0c1.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.9584853649139404,
+          "probs": {
+            "glioma": 0.039588525891304016,
+            "meningioma": 0.00041548136505298316,
+            "notumor": 0.9584853649139404,
+            "pituitary": 0.0015105255879461765
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0354_jpg.rf.d81baa6c0ede1471eb5738edbc4ee5bb.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.912467360496521,
+          "probs": {
+            "glioma": 0.0004755843838211149,
+            "meningioma": 2.2570495730178664e-06,
+            "notumor": 0.912467360496521,
+            "pituitary": 0.08705484867095947
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0361_jpg.rf.8d66bea9d9e73b314429d4d8c8b28dbf.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.8178994655609131,
+          "probs": {
+            "glioma": 0.018076052889227867,
+            "meningioma": 0.020635908469557762,
+            "notumor": 0.8178994655609131,
+            "pituitary": 0.14338861405849457
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0363_jpg.rf.b4ef00c6fdbdb432c65f6aba4c209dc5.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9840425848960876,
+          "probs": {
+            "glioma": 0.0045332289300858974,
+            "meningioma": 0.00040908539085648954,
+            "notumor": 0.011015152558684349,
+            "pituitary": 0.9840425848960876
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0366_jpg.rf.d3f64a8e73f639b1bea2edebda490616.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.5068424344062805,
+          "probs": {
+            "glioma": 0.028044288977980614,
+            "meningioma": 0.0001008859253488481,
+            "notumor": 0.5068424344062805,
+            "pituitary": 0.4650122821331024
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0385_jpg.rf.0d42934ca1dfc2bd219250df42452808.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.8748565912246704,
+          "probs": {
+            "glioma": 0.05051864683628082,
+            "meningioma": 0.0079770777374506,
+            "notumor": 0.0666477233171463,
+            "pituitary": 0.8748565912246704
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0419_jpg.rf.c1af203813bdfd84033fbae35d76c506.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9705287218093872,
+          "probs": {
+            "glioma": 7.274124072864652e-05,
+            "meningioma": 0.029116207733750343,
+            "notumor": 0.00028233154444023967,
+            "pituitary": 0.9705287218093872
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0428_jpg.rf.1e7d5fc50abd1faa11dec078121da69a.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9979625940322876,
+          "probs": {
+            "glioma": 0.0008964675944298506,
+            "meningioma": 0.0006180251366458833,
+            "notumor": 0.0005229872185736895,
+            "pituitary": 0.9979625940322876
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0573_jpg.rf.b03ed848c0d4a30e1441a07ead3e3dba.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9999820590019226,
+          "probs": {
+            "glioma": 1.9021255184270558e-06,
+            "meningioma": 1.2808889550797176e-05,
+            "notumor": 3.362416464369744e-06,
+            "pituitary": 0.9999820590019226
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0616_jpg.rf.5c8104a9d8cbd2e8dfed59e134addecf.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.8634818196296692,
+          "probs": {
+            "glioma": 0.012015544809401035,
+            "meningioma": 0.8634818196296692,
+            "notumor": 0.001165329129435122,
+            "pituitary": 0.12333744764328003
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0636_jpg.rf.744324eb85d16f63b9cf5f570e1bb97c.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.999212384223938,
+          "probs": {
+            "glioma": 1.3744404895987827e-05,
+            "meningioma": 0.0007579365046694875,
+            "notumor": 1.59908267960418e-05,
+            "pituitary": 0.999212384223938
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0661_jpg.rf.2b69b95ab7aaf5f91ca34048f940199f.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.7240815758705139,
+          "probs": {
+            "glioma": 0.0012213225709274411,
+            "meningioma": 0.2734910547733307,
+            "notumor": 0.0012060075532644987,
+            "pituitary": 0.7240815758705139
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0713_jpg.rf.d669a4c69655db7502d916c512aeaec5.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.999024510383606,
+          "probs": {
+            "glioma": 4.638401605916442e-06,
+            "meningioma": 0.0009051159140653908,
+            "notumor": 6.573090649908409e-05,
+            "pituitary": 0.999024510383606
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0768_jpg.rf.a0a763c40c0f722ed88847583526c557.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9999752640724182,
+          "probs": {
+            "glioma": 1.3376948118093424e-06,
+            "meningioma": 1.68445949384477e-05,
+            "notumor": 6.5225349317188375e-06,
+            "pituitary": 0.9999752640724182
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0822_jpg.rf.78e9ba0dda96fdb80dc8a220e92933e4.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9936004877090454,
+          "probs": {
+            "glioma": 6.883867172291502e-05,
+            "meningioma": 0.0061658467166125774,
+            "notumor": 0.00016489774861838669,
+            "pituitary": 0.9936004877090454
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0831_jpg.rf.314ef177fdfbd93b6a037d9f7b4d17c8.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.7128864526748657,
+          "probs": {
+            "glioma": 0.27515867352485657,
+            "meningioma": 0.0015626411186531186,
+            "notumor": 0.7128864526748657,
+            "pituitary": 0.010392160154879093
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0856_jpg.rf.3dbc3662c98f96c874f4a51322da3358.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9835423231124878,
+          "probs": {
+            "glioma": 0.0008948987815529108,
+            "meningioma": 0.01462522242218256,
+            "notumor": 0.0009375100489705801,
+            "pituitary": 0.9835423231124878
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0883_jpg.rf.80a8f94d5881f7be88a86b7e06719ed1.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9394388794898987,
+          "probs": {
+            "glioma": 0.0003231818263884634,
+            "meningioma": 0.05979805439710617,
+            "notumor": 0.0004399163881316781,
+            "pituitary": 0.9394388794898987
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0885_jpg.rf.f0ca3713e535b5d0c2a2d5dd859343ff.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9415865540504456,
+          "probs": {
+            "glioma": 7.594916951347841e-06,
+            "meningioma": 0.058395493775606155,
+            "notumor": 1.0270779057464097e-05,
+            "pituitary": 0.9415865540504456
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0892_jpg.rf.5f08f446031d6d16c31138fb5ac33cd2.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.7792247533798218,
+          "probs": {
+            "glioma": 0.18247166275978088,
+            "meningioma": 0.7792247533798218,
+            "notumor": 0.0019507714314386249,
+            "pituitary": 0.03635278716683388
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0899_jpg.rf.0f1a06e027e7acb35f62ddea19c545c6.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9974391460418701,
+          "probs": {
+            "glioma": 6.126704829512164e-05,
+            "meningioma": 0.00232836976647377,
+            "notumor": 0.00017117933020927012,
+            "pituitary": 0.9974391460418701
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1076_jpg.rf.59181ecf853fa5645835b32da305c4be.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.695160984992981,
+          "probs": {
+            "glioma": 0.06919657438993454,
+            "meningioma": 0.695160984992981,
+            "notumor": 0.005134736653417349,
+            "pituitary": 0.23050770163536072
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1104_jpg.rf.4be6f18d167fe55778bf2d34e869650c.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.9946016073226929,
+          "probs": {
+            "glioma": 0.003724797163158655,
+            "meningioma": 0.9946016073226929,
+            "notumor": 0.0008508344762958586,
+            "pituitary": 0.0008227936923503876
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1112_jpg.rf.439be5db1292283d4c8726e178249fe8.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.8256806135177612,
+          "probs": {
+            "glioma": 0.0011417457135394216,
+            "meningioma": 0.8256806135177612,
+            "notumor": 0.0001495236938353628,
+            "pituitary": 0.17302803695201874
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1168_jpg.rf.bb4c43668ad39dd219fac2eff3a96bf7.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9822109937667847,
+          "probs": {
+            "glioma": 0.0006774198263883591,
+            "meningioma": 0.010598110035061836,
+            "notumor": 0.006513484288007021,
+            "pituitary": 0.9822109937667847
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1214_jpg.rf.60d7266f7434486b9591a7838156298b.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9245719313621521,
+          "probs": {
+            "glioma": 0.0010560941882431507,
+            "meningioma": 0.07381094992160797,
+            "notumor": 0.0005609895451925695,
+            "pituitary": 0.9245719313621521
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1223_jpg.rf.71d66ce11a371deb1d99d430f4455bc7.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.998248279094696,
+          "probs": {
+            "glioma": 4.396855729282834e-06,
+            "meningioma": 0.0017191075021401048,
+            "notumor": 2.8231415853952058e-05,
+            "pituitary": 0.998248279094696
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1240_jpg.rf.54e01573dbd71b98ee6cbf25e02aed1c.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9918441772460938,
+          "probs": {
+            "glioma": 8.590377547079697e-05,
+            "meningioma": 0.00638386607170105,
+            "notumor": 0.0016860520699992776,
+            "pituitary": 0.9918441772460938
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1269_jpg.rf.d5dab7c72b523717bdd3c4624f17558b.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9895160794258118,
+          "probs": {
+            "glioma": 9.491239325143397e-05,
+            "meningioma": 0.01026700995862484,
+            "notumor": 0.00012198503827676177,
+            "pituitary": 0.9895160794258118
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1270_jpg.rf.e417bb6973c02122827bdf99d4cebf95.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9862596988677979,
+          "probs": {
+            "glioma": 4.659009209717624e-05,
+            "meningioma": 0.013422484509646893,
+            "notumor": 0.00027118611615151167,
+            "pituitary": 0.9862596988677979
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1307_jpg.rf.fcefc19eb7f7be47c849642b8cfd6aea.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.9997521638870239,
+          "probs": {
+            "glioma": 1.211885319207795e-05,
+            "meningioma": 0.00016720198618713766,
+            "notumor": 0.9997521638870239,
+            "pituitary": 6.849382043583319e-05
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m-45-_jpg.rf.ab367e470a3712a30580ef93417720cf.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9960857629776001,
+          "probs": {
+            "glioma": 2.423360228931415e-06,
+            "meningioma": 0.003898204769939184,
+            "notumor": 1.3636310541187413e-05,
+            "pituitary": 0.9960857629776001
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m-54-_jpg.rf.0844a03de133343c0228e926f16639c4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.999996542930603,
+          "probs": {
+            "glioma": 3.4007783256129187e-09,
+            "meningioma": 3.2331051897926955e-06,
+            "notumor": 2.013870670225515e-07,
+            "pituitary": 0.999996542930603
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-103-_jpg.rf.f272fcc184882d6d3225829981b2de02.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9990743398666382,
+          "probs": {
+            "glioma": 1.2760384038301709e-07,
+            "meningioma": 0.0009183912770822644,
+            "notumor": 7.108539648470469e-06,
+            "pituitary": 0.9990743398666382
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-121-_jpg.rf.f3d714369b191b5a961f444c951e128c.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9957447052001953,
+          "probs": {
+            "glioma": 1.1078861916757887e-07,
+            "meningioma": 0.004254007712006569,
+            "notumor": 1.1672192385958624e-06,
+            "pituitary": 0.9957447052001953
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-135-_jpg.rf.27d9721c6f5659facaeecc259d066d76.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9753579497337341,
+          "probs": {
+            "glioma": 3.623570592026226e-05,
+            "meningioma": 0.0006520409369841218,
+            "notumor": 0.9753579497337341,
+            "pituitary": 0.023953700438141823
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-150-_jpg.rf.ca2d0ab24d70eefe35cff9e01c731233.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9998586773872375,
+          "probs": {
+            "glioma": 3.186124786225264e-08,
+            "meningioma": 2.1408795873867348e-06,
+            "notumor": 0.00013922230573371053,
+            "pituitary": 0.9998586773872375
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-71-_jpg.rf.761fed253069ab45c8c3aa46b0e764f4.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.7177171111106873,
+          "probs": {
+            "glioma": 0.00313779478892684,
+            "meningioma": 0.2784960865974426,
+            "notumor": 0.7177171111106873,
+            "pituitary": 0.0006489393417723477
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-8-_jpg.rf.1c1ddf45f199653325a1c37ad07bb507.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9045981168746948,
+          "probs": {
+            "glioma": 3.571350680431351e-05,
+            "meningioma": 0.09490982443094254,
+            "notumor": 0.9045981168746948,
+            "pituitary": 0.00045641171163879335
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-94-_jpg.rf.83ac72db391310f639b522aa6301d5aa.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.5926969647407532,
+          "probs": {
+            "glioma": 6.93287220201455e-05,
+            "meningioma": 0.4070986211299896,
+            "notumor": 0.00013515286264009774,
+            "pituitary": 0.5926969647407532
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-130-_jpg.rf.9d6d892b4c25ba75175f165e4a3d313e.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9809961915016174,
+          "probs": {
+            "glioma": 7.046344308037078e-06,
+            "meningioma": 0.018981320783495903,
+            "notumor": 1.547729698359035e-05,
+            "pituitary": 0.9809961915016174
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-157-_jpg.rf.1ebaec17fafdac4df4dd14d3c57b1c70.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.941031277179718,
+          "probs": {
+            "glioma": 0.00021950020163785666,
+            "meningioma": 0.006039728410542011,
+            "notumor": 0.05270954966545105,
+            "pituitary": 0.941031277179718
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-162-_jpg.rf.971270ffc0d6242ca58f00f7be24ebe4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9922122955322266,
+          "probs": {
+            "glioma": 4.845416697207838e-06,
+            "meningioma": 0.007725514937192202,
+            "notumor": 5.740107371821068e-05,
+            "pituitary": 0.9922122955322266
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-47-_jpg.rf.4f8caf5da3e2c06ea34542bc10ae9b60.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9417270421981812,
+          "probs": {
+            "glioma": 0.0017633477691560984,
+            "meningioma": 0.047377683222293854,
+            "notumor": 0.009131918661296368,
+            "pituitary": 0.9417270421981812
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-55-_jpg.rf.048f3bf03ff1c18c901f76690965353f.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.997373104095459,
+          "probs": {
+            "glioma": 8.011415530972954e-08,
+            "meningioma": 0.002626829780638218,
+            "notumor": 1.8359196829464963e-08,
+            "pituitary": 0.997373104095459
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-6-_jpg.rf.7217621cac7a0838cda9305cbbfe484a.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9121254682540894,
+          "probs": {
+            "glioma": 1.0152051800105255e-05,
+            "meningioma": 0.08775456249713898,
+            "notumor": 0.00010983671381836757,
+            "pituitary": 0.9121254682540894
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-82-_jpg.rf.b76755757a1048fa1b03b140f9a4a62d.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.828623354434967,
+          "probs": {
+            "glioma": 0.00035396069870330393,
+            "meningioma": 0.028144262731075287,
+            "notumor": 0.1428784281015396,
+            "pituitary": 0.828623354434967
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-132-_jpg.rf.5c627d08519df5dff7da794749d22d73.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.999836266040802,
+          "probs": {
+            "glioma": 8.78725302300154e-07,
+            "meningioma": 0.000114009904791601,
+            "notumor": 0.999836266040802,
+            "pituitary": 4.885222006123513e-05
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-142-_jpg.rf.0276a99d7def883feec9621069850e07.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9924110770225525,
+          "probs": {
+            "glioma": 2.4046701128099812e-06,
+            "meningioma": 0.0075669558718800545,
+            "notumor": 1.9508865079842508e-05,
+            "pituitary": 0.9924110770225525
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-18-_jpg.rf.c878697311a9529b7a9fc20e93fb17a2.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9637057185173035,
+          "probs": {
+            "glioma": 6.49393696221523e-05,
+            "meningioma": 0.03542076423764229,
+            "notumor": 0.0008086619200184941,
+            "pituitary": 0.9637057185173035
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-31-_jpg.rf.ce7c122e0a12e7bf02bfdf7916523b21.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9062554836273193,
+          "probs": {
+            "glioma": 0.00019558396888896823,
+            "meningioma": 0.09205087274312973,
+            "notumor": 0.0014980577398091555,
+            "pituitary": 0.9062554836273193
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-40-_jpg.rf.976163cb24fd3862dc6d91f0c29940a8.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.42149385809898376,
+          "probs": {
+            "glioma": 0.017294757068157196,
+            "meningioma": 0.38295459747314453,
+            "notumor": 0.42149385809898376,
+            "pituitary": 0.17825670540332794
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-42-_jpg.rf.512d416c25bb75541e2b3f7c7eef8dac.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9033666253089905,
+          "probs": {
+            "glioma": 4.04674301535124e-06,
+            "meningioma": 0.09661521017551422,
+            "notumor": 1.4144660781312268e-05,
+            "pituitary": 0.9033666253089905
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-67-_jpg.rf.8170eba01dca89941247549c010fbcbc.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9992762804031372,
+          "probs": {
+            "glioma": 2.426004925837333e-07,
+            "meningioma": 0.0007229543407447636,
+            "notumor": 4.2519278053987364e-07,
+            "pituitary": 0.9992762804031372
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-79-_jpg.rf.7964a7e74388e7eba46664957bede273.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.7993530035018921,
+          "probs": {
+            "glioma": 2.7485566533869132e-05,
+            "meningioma": 0.2001548707485199,
+            "notumor": 0.0004645995213650167,
+            "pituitary": 0.7993530035018921
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-noTr_0009_jpg.rf.64b5043164c8b8cd46c1a4e74c944e6f.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.860348641872406,
+          "probs": {
+            "glioma": 0.00033220057957805693,
+            "meningioma": 0.031381960958242416,
+            "notumor": 0.10793723911046982,
+            "pituitary": 0.860348641872406
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0305_jpg.rf.471587f88c272b2951f74c0c161a9855.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.5714883208274841,
+          "probs": {
+            "glioma": 0.0008562891744077206,
+            "meningioma": 0.018991896882653236,
+            "notumor": 0.40866348147392273,
+            "pituitary": 0.5714883208274841
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0320_jpg.rf.07c971b6aa0c6ca95f6147a351127499.jpg",
+          "true": "notumor",
+          "pred": "meningioma",
+          "confidence": 0.9552986025810242,
+          "probs": {
+            "glioma": 0.0007804206106811762,
+            "meningioma": 0.9552986025810242,
+            "notumor": 0.022386297583580017,
+            "pituitary": 0.021534688770771027
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0361_jpg.rf.8670dcd1564e1bc72847b619683f3475.jpg",
+          "true": "notumor",
+          "pred": "meningioma",
+          "confidence": 0.9840758442878723,
+          "probs": {
+            "glioma": 0.00027977381250821054,
+            "meningioma": 0.9840758442878723,
+            "notumor": 0.003140245098620653,
+            "pituitary": 0.012504160404205322
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0367_jpg.rf.47e9af15acd2735fbe6dd49a710fd3b0.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.7715348601341248,
+          "probs": {
+            "glioma": 0.0006367675960063934,
+            "meningioma": 0.2192545086145401,
+            "notumor": 0.008573843166232109,
+            "pituitary": 0.7715348601341248
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0498_jpg.rf.54179a9d73b141d88e947692e8455b5b.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.8618066906929016,
+          "probs": {
+            "glioma": 0.00012365865404717624,
+            "meningioma": 0.03689426928758621,
+            "notumor": 0.10117532312870026,
+            "pituitary": 0.8618066906929016
+          }
+        }
+      ]
+    },
+    "original_independent": {
+      "title": "Original Model on Independent Test Set (160 images)",
+      "total": 160,
+      "accuracy": 0.71875,
+      "macro_precision": 0.7924908424908425,
+      "macro_recall": 0.71875,
+      "macro_f1": 0.6667814983234578,
+      "per_class": {
+        "glioma": {
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 40
+        },
+        "meningioma": {
+          "precision": 0.8,
+          "recall": 0.1,
+          "f1": 0.1777777777777778,
+          "support": 40
+        },
+        "notumor": {
+          "precision": 0.8571428571428571,
+          "recall": 0.9,
+          "f1": 0.8780487804878048,
+          "support": 40
+        },
+        "pituitary": {
+          "precision": 0.5128205128205128,
+          "recall": 1.0,
+          "f1": 0.6779661016949152,
+          "support": 40
+        }
+      },
+      "confusion_matrix": [
+        [
+          35,
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          31
+        ],
+        [
+          0,
+          0,
+          36,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          40
+        ]
+      ],
+      "misclassified": [
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0186_jpg.rf.2915ec01fc8753393129b6b94456f30a.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.512927234172821,
+          "probs": {
+            "glioma": 0.4192555546760559,
+            "meningioma": 0.021667946130037308,
+            "notumor": 0.512927234172821,
+            "pituitary": 0.046149276196956635
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0832_jpg.rf.f807479bb7413d4c82c54b7679bbf391.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.7172232270240784,
+          "probs": {
+            "glioma": 0.21742072701454163,
+            "meningioma": 0.7172232270240784,
+            "notumor": 0.020297907292842865,
+            "pituitary": 0.045058250427246094
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0883_jpg.rf.80a8f94d5881f7be88a86b7e06719ed1.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.6811919808387756,
+          "probs": {
+            "glioma": 0.312841534614563,
+            "meningioma": 0.0035272985696792603,
+            "notumor": 0.0024391384795308113,
+            "pituitary": 0.6811919808387756
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_0885_jpg.rf.f0ca3713e535b5d0c2a2d5dd859343ff.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.7792221903800964,
+          "probs": {
+            "glioma": 0.2207002490758896,
+            "meningioma": 4.7662470024079084e-05,
+            "notumor": 2.99181483569555e-05,
+            "pituitary": 0.7792221903800964
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/glioma/Tr-gl_1223_jpg.rf.71d66ce11a371deb1d99d430f4455bc7.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.995658278465271,
+          "probs": {
+            "glioma": 0.004246651194989681,
+            "meningioma": 4.748121227748925e-06,
+            "notumor": 9.037955169333145e-05,
+            "pituitary": 0.995658278465271
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m-45-_jpg.rf.ab367e470a3712a30580ef93417720cf.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9982053637504578,
+          "probs": {
+            "glioma": 0.00014100907719694078,
+            "meningioma": 0.00013302887964528054,
+            "notumor": 0.0015206282259896398,
+            "pituitary": 0.9982053637504578
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m-54-_jpg.rf.0844a03de133343c0228e926f16639c4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9989369511604309,
+          "probs": {
+            "glioma": 0.0007667515892535448,
+            "meningioma": 9.757685620570555e-05,
+            "notumor": 0.00019877981685567647,
+            "pituitary": 0.9989369511604309
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-103-_jpg.rf.f272fcc184882d6d3225829981b2de02.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.8604480624198914,
+          "probs": {
+            "glioma": 0.014701975509524345,
+            "meningioma": 0.019396241754293442,
+            "notumor": 0.10545368492603302,
+            "pituitary": 0.8604480624198914
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-111-_jpg.rf.46152c0d39fd6d8bca253afd226613dc.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.933161735534668,
+          "probs": {
+            "glioma": 0.005152580328285694,
+            "meningioma": 0.0074492632411420345,
+            "notumor": 0.054236412048339844,
+            "pituitary": 0.933161735534668
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-121-_jpg.rf.f3d714369b191b5a961f444c951e128c.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999312162399292,
+          "probs": {
+            "glioma": 5.668045923812315e-05,
+            "meningioma": 1.6096660715447797e-07,
+            "notumor": 1.188539135910105e-05,
+            "pituitary": 0.9999312162399292
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-135-_jpg.rf.27d9721c6f5659facaeecc259d066d76.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.8649090528488159,
+          "probs": {
+            "glioma": 0.07760554552078247,
+            "meningioma": 0.010020751506090164,
+            "notumor": 0.8649090528488159,
+            "pituitary": 0.04746453836560249
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-150-_jpg.rf.ca2d0ab24d70eefe35cff9e01c731233.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.918703019618988,
+          "probs": {
+            "glioma": 0.002433447865769267,
+            "meningioma": 2.4719951397855766e-05,
+            "notumor": 0.918703019618988,
+            "pituitary": 0.07883887737989426
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-173-_jpg.rf.461f595202e6dad6a8c5a4ebef0ca00d.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9816270470619202,
+          "probs": {
+            "glioma": 0.00027777362265624106,
+            "meningioma": 0.009994430467486382,
+            "notumor": 0.00810070987790823,
+            "pituitary": 0.9816270470619202
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-185-_jpg.rf.45bc5dc03a6f374ff3fdb7a3144d8cf4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9789547920227051,
+          "probs": {
+            "glioma": 0.011692365631461143,
+            "meningioma": 4.310805525165051e-05,
+            "notumor": 0.009309608489274979,
+            "pituitary": 0.9789547920227051
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-188-_jpg.rf.f99152072f1e4b2274f667e73c29903a.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.6416372060775757,
+          "probs": {
+            "glioma": 0.08645480871200562,
+            "meningioma": 0.006423164624720812,
+            "notumor": 0.6416372060775757,
+            "pituitary": 0.26548486948013306
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-8-_jpg.rf.1c1ddf45f199653325a1c37ad07bb507.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.8973971605300903,
+          "probs": {
+            "glioma": 0.03189057111740112,
+            "meningioma": 0.06225286424160004,
+            "notumor": 0.8973971605300903,
+            "pituitary": 0.008459532633423805
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m1-94-_jpg.rf.83ac72db391310f639b522aa6301d5aa.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9990264177322388,
+          "probs": {
+            "glioma": 0.00019169499864801764,
+            "meningioma": 2.0568901163642295e-05,
+            "notumor": 0.0007613140624016523,
+            "pituitary": 0.9990264177322388
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-130-_jpg.rf.9d6d892b4c25ba75175f165e4a3d313e.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999638199806213,
+          "probs": {
+            "glioma": 1.653554500080645e-05,
+            "meningioma": 4.305507445678813e-06,
+            "notumor": 1.5430265193572268e-05,
+            "pituitary": 0.9999638199806213
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-162-_jpg.rf.971270ffc0d6242ca58f00f7be24ebe4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.8701282143592834,
+          "probs": {
+            "glioma": 0.10900954157114029,
+            "meningioma": 0.017890311777591705,
+            "notumor": 0.002971875946968794,
+            "pituitary": 0.8701282143592834
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-34-_jpg.rf.fa06a33112dd8bf40649f77048fc44d4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.679269552230835,
+          "probs": {
+            "glioma": 0.04023991897702217,
+            "meningioma": 0.27315059304237366,
+            "notumor": 0.007339949253946543,
+            "pituitary": 0.679269552230835
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-47-_jpg.rf.4f8caf5da3e2c06ea34542bc10ae9b60.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.943565845489502,
+          "probs": {
+            "glioma": 0.0141384182497859,
+            "meningioma": 0.034452442079782486,
+            "notumor": 0.007843198254704475,
+            "pituitary": 0.943565845489502
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-53-_jpg.rf.eb1d801ebe07254c784c30deb287cdee.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9982468485832214,
+          "probs": {
+            "glioma": 0.0012749938759952784,
+            "meningioma": 0.000474293134175241,
+            "notumor": 3.791394647123525e-06,
+            "pituitary": 0.9982468485832214
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-55-_jpg.rf.048f3bf03ff1c18c901f76690965353f.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999852180480957,
+          "probs": {
+            "glioma": 1.4365268725669011e-05,
+            "meningioma": 2.0995776139898226e-07,
+            "notumor": 2.2479255790130992e-07,
+            "pituitary": 0.9999852180480957
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-59-_jpg.rf.1fde973c0e79ec103045ff4cf48bebc9.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9995194673538208,
+          "probs": {
+            "glioma": 0.0003461797023192048,
+            "meningioma": 3.3147640351671726e-05,
+            "notumor": 0.00010111249139299616,
+            "pituitary": 0.9995194673538208
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-6-_jpg.rf.7217621cac7a0838cda9305cbbfe484a.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.99950110912323,
+          "probs": {
+            "glioma": 0.0003227862762287259,
+            "meningioma": 9.769063763087615e-05,
+            "notumor": 7.844993524486199e-05,
+            "pituitary": 0.99950110912323
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-62-_jpg.rf.3aee51e1dc0ff156c3c19adbb8e7fa3c.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9998793601989746,
+          "probs": {
+            "glioma": 8.890202298061922e-05,
+            "meningioma": 1.5197539141809102e-05,
+            "notumor": 1.6531688743270934e-05,
+            "pituitary": 0.9998793601989746
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m2-71-_jpg.rf.d550d2e7904e7118b9a043e745a1e969.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.999809741973877,
+          "probs": {
+            "glioma": 0.00014537505921907723,
+            "meningioma": 2.469080027367454e-05,
+            "notumor": 2.0125329683651216e-05,
+            "pituitary": 0.999809741973877
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-132-_jpg.rf.5c627d08519df5dff7da794749d22d73.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.5946105122566223,
+          "probs": {
+            "glioma": 0.10685143619775772,
+            "meningioma": 0.0033124263864010572,
+            "notumor": 0.5946105122566223,
+            "pituitary": 0.2952256202697754
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-140-_jpg.rf.0ea188fbe140f8da01283ca39903a7f4.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.7082685828208923,
+          "probs": {
+            "glioma": 0.0061884308233857155,
+            "meningioma": 0.02887999266386032,
+            "notumor": 0.2566630244255066,
+            "pituitary": 0.7082685828208923
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-142-_jpg.rf.0276a99d7def883feec9621069850e07.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9960622787475586,
+          "probs": {
+            "glioma": 0.00011207746138097718,
+            "meningioma": 0.0015708195278421044,
+            "notumor": 0.0022549154236912727,
+            "pituitary": 0.9960622787475586
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-147-_jpg.rf.5cee45898b1fb987916cb2d8532909b3.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999880790710449,
+          "probs": {
+            "glioma": 9.44338898989372e-06,
+            "meningioma": 8.912841167330043e-07,
+            "notumor": 1.5400215715999366e-06,
+            "pituitary": 0.9999880790710449
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-18-_jpg.rf.c878697311a9529b7a9fc20e93fb17a2.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9995425343513489,
+          "probs": {
+            "glioma": 0.0002217207511421293,
+            "meningioma": 1.5904051906545646e-05,
+            "notumor": 0.00021989441302139312,
+            "pituitary": 0.9995425343513489
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-182-_jpg.rf.1dcbabfb24cb3c2003645cf2cf793dcc.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999935626983643,
+          "probs": {
+            "glioma": 2.9786406230414286e-06,
+            "meningioma": 2.95904510494438e-06,
+            "notumor": 5.346788043425477e-07,
+            "pituitary": 0.9999935626983643
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-31-_jpg.rf.ce7c122e0a12e7bf02bfdf7916523b21.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9995644092559814,
+          "probs": {
+            "glioma": 0.0004211408377159387,
+            "meningioma": 9.044510079547763e-06,
+            "notumor": 5.4874362831469625e-06,
+            "pituitary": 0.9995644092559814
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-37-_jpg.rf.fe63a57b10eaf791fdb23b24571ff96c.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9965189695358276,
+          "probs": {
+            "glioma": 0.0017140480922535062,
+            "meningioma": 0.0008850987651385367,
+            "notumor": 0.000881915504578501,
+            "pituitary": 0.9965189695358276
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-42-_jpg.rf.512d416c25bb75541e2b3f7c7eef8dac.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999058842658997,
+          "probs": {
+            "glioma": 7.447376265190542e-05,
+            "meningioma": 1.1603928214753978e-05,
+            "notumor": 8.070896910794545e-06,
+            "pituitary": 0.9999058842658997
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-51-_jpg.rf.9e7950184a81f8d9ef4d5dffcdee78ec.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9998927116394043,
+          "probs": {
+            "glioma": 8.486884325975552e-05,
+            "meningioma": 1.8269633073941804e-05,
+            "notumor": 4.162223831372103e-06,
+            "pituitary": 0.9998927116394043
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-67-_jpg.rf.8170eba01dca89941247549c010fbcbc.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999878406524658,
+          "probs": {
+            "glioma": 1.1073611858591903e-05,
+            "meningioma": 2.965125531773083e-07,
+            "notumor": 8.171591048267146e-07,
+            "pituitary": 0.9999878406524658
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-79-_jpg.rf.7964a7e74388e7eba46664957bede273.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9999800324440002,
+          "probs": {
+            "glioma": 1.087529381038621e-05,
+            "meningioma": 3.0473981951217866e-06,
+            "notumor": 6.05581271884148e-06,
+            "pituitary": 0.9999800324440002
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-82-_jpg.rf.b7ea2020b9aefcae024148c80a4c9324.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9867196679115295,
+          "probs": {
+            "glioma": 0.005767421331256628,
+            "meningioma": 0.006876287050545216,
+            "notumor": 0.0006365386652760208,
+            "pituitary": 0.9867196679115295
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/meningioma/m3-88-_jpg.rf.1c2612c30cb48cd4098ee8f5f73fb5d0.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9942213296890259,
+          "probs": {
+            "glioma": 0.005287646781653166,
+            "meningioma": 0.00032491402816958725,
+            "notumor": 0.0001662107097217813,
+            "pituitary": 0.9942213296890259
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0305_jpg.rf.471587f88c272b2951f74c0c161a9855.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9421393275260925,
+          "probs": {
+            "glioma": 0.001801205682568252,
+            "meningioma": 0.001091939047910273,
+            "notumor": 0.054967500269412994,
+            "pituitary": 0.9421393275260925
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0733_jpg.rf.0d2b2d557c0fd89959e49ed96867cde0.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.5152673125267029,
+          "probs": {
+            "glioma": 0.14926037192344666,
+            "meningioma": 0.001592553104273975,
+            "notumor": 0.333879679441452,
+            "pituitary": 0.5152673125267029
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0759_jpg.rf.6aa4f728ba024b5bd06f77e7a01db026.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.8860955834388733,
+          "probs": {
+            "glioma": 0.04226527363061905,
+            "meningioma": 0.0562467984855175,
+            "notumor": 0.015392357483506203,
+            "pituitary": 0.8860955834388733
+          }
+        },
+        {
+          "filepath": "dataset_clean/test_independent/notumor/Tr-no_0892_jpg.rf.c742428d33e56aa6ea4b4ba971e625c9.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.5327776670455933,
+          "probs": {
+            "glioma": 0.0010858433088287711,
+            "meningioma": 0.015860697254538536,
+            "notumor": 0.450275719165802,
+            "pituitary": 0.5327776670455933
+          }
+        }
+      ]
+    },
+    "candidate_benchmark": {
+      "title": "Candidate Model on Benchmark Test Set (80 images)",
+      "total": 80,
+      "accuracy": 0.3625,
+      "macro_precision": 0.18622448979591838,
+      "macro_recall": 0.3625,
+      "macro_f1": 0.2418478260869565,
+      "per_class": {
+        "glioma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 20
+        },
+        "meningioma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 20
+        },
+        "notumor": {
+          "precision": 0.35714285714285715,
+          "recall": 0.5,
+          "f1": 0.41666666666666663,
+          "support": 20
+        },
+        "pituitary": {
+          "precision": 0.3877551020408163,
+          "recall": 0.95,
+          "f1": 0.5507246376811594,
+          "support": 20
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          2,
+          3,
+          15
+        ],
+        [
+          0,
+          0,
+          15,
+          5
+        ],
+        [
+          0,
+          0,
+          10,
+          10
+        ],
+        [
+          0,
+          1,
+          0,
+          19
+        ]
+      ],
+      "misclassified": [
+        {
+          "filepath": "testing/glioma/Tr-glTr_0002_jpg.rf.abea6b2166a7dc9a4ee163e8e9d59512.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.7549096941947937,
+          "probs": {
+            "glioma": 0.0017820498906075954,
+            "meningioma": 0.23147104680538177,
+            "notumor": 0.011837317608296871,
+            "pituitary": 0.7549096941947937
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0011_jpg.rf.f8f08eba2e6e5716df4f467f4d8e1168.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9996920824050903,
+          "probs": {
+            "glioma": 5.301129490931089e-08,
+            "meningioma": 0.0003040988522116095,
+            "notumor": 3.7544923543464392e-06,
+            "pituitary": 0.9996920824050903
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0015_jpg.rf.64b10a3f0484485fba7f41b9806329f9.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9927535653114319,
+          "probs": {
+            "glioma": 0.00015838562103454024,
+            "meningioma": 4.061601066496223e-05,
+            "notumor": 0.007047401741147041,
+            "pituitary": 0.9927535653114319
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0016_jpg.rf.56d8de88dfdcdafff28104666a1d807b.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.8553023338317871,
+          "probs": {
+            "glioma": 2.1001902496209368e-05,
+            "meningioma": 0.14464031159877777,
+            "notumor": 3.630616993177682e-05,
+            "pituitary": 0.8553023338317871
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0017_jpg.rf.54242f0e82507cc0f236259534882c5f.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9987219572067261,
+          "probs": {
+            "glioma": 6.430301436921582e-05,
+            "meningioma": 0.0008569905185140669,
+            "notumor": 0.00035686627961695194,
+            "pituitary": 0.9987219572067261
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0024_jpg.rf.840a15b3ee4ae0383c493bea01d4db2b.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9494107365608215,
+          "probs": {
+            "glioma": 0.0017623218009248376,
+            "meningioma": 0.022128712385892868,
+            "notumor": 0.026698287576436996,
+            "pituitary": 0.9494107365608215
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0025_jpg.rf.678bf966821cbe74c5edd81e1ccc9465.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9691110253334045,
+          "probs": {
+            "glioma": 0.00018612937128636986,
+            "meningioma": 0.03067295253276825,
+            "notumor": 2.9903270842623897e-05,
+            "pituitary": 0.9691110253334045
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0026_jpg.rf.637b906a0ab721cb6919a702836998ac.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.8753219246864319,
+          "probs": {
+            "glioma": 0.0006565505755133927,
+            "meningioma": 0.12060142308473587,
+            "notumor": 0.003420148976147175,
+            "pituitary": 0.8753219246864319
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0029_jpg.rf.266a25b0e6899ec5dbd36a98a332bbae.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.560849130153656,
+          "probs": {
+            "glioma": 0.02340003475546837,
+            "meningioma": 0.560849130153656,
+            "notumor": 0.003480261657387018,
+            "pituitary": 0.41227060556411743
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0032_jpg.rf.24a22af5d45ce22700877612626df54e.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.5364057421684265,
+          "probs": {
+            "glioma": 0.004284056834876537,
+            "meningioma": 0.4507368206977844,
+            "notumor": 0.008573325350880623,
+            "pituitary": 0.5364057421684265
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0033_jpg.rf.a3f1de9289efceb44122544af7dd2e6e.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9598286747932434,
+          "probs": {
+            "glioma": 0.00034209369914606214,
+            "meningioma": 0.039486680179834366,
+            "notumor": 0.00034254827187396586,
+            "pituitary": 0.9598286747932434
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0037_jpg.rf.4a858420d384a1d43d336d5899d834e1.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.8000377416610718,
+          "probs": {
+            "glioma": 0.006993275601416826,
+            "meningioma": 0.1858406662940979,
+            "notumor": 0.007128244265913963,
+            "pituitary": 0.8000377416610718
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0038_jpg.rf.1045eacdb7e899e98a510715cc7fd86a.jpg",
+          "true": "glioma",
+          "pred": "meningioma",
+          "confidence": 0.8626028299331665,
+          "probs": {
+            "glioma": 7.892606663517654e-05,
+            "meningioma": 0.8626028299331665,
+            "notumor": 0.0003419009444769472,
+            "pituitary": 0.13697634637355804
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0042_jpg.rf.3af9fed7ade6344ed8be5e8c138eed25.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.7656092643737793,
+          "probs": {
+            "glioma": 0.005619042087346315,
+            "meningioma": 0.0016235909424722195,
+            "notumor": 0.7656092643737793,
+            "pituitary": 0.22714807093143463
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0045_jpg.rf.48cf5c7dc1817fdd996955c25cb56354.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.8846349120140076,
+          "probs": {
+            "glioma": 0.0005894346395507455,
+            "meningioma": 0.1112712100148201,
+            "notumor": 0.003504483960568905,
+            "pituitary": 0.8846349120140076
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0048_jpg.rf.ab5c6a279b8713d8391fe5c8eec1dd1f.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.7182279825210571,
+          "probs": {
+            "glioma": 0.012680113315582275,
+            "meningioma": 0.21739642322063446,
+            "notumor": 0.051695551723241806,
+            "pituitary": 0.7182279825210571
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0057_jpg.rf.bd30e4239c26fb121cf4fc0fae9ea160.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.99998939037323,
+          "probs": {
+            "glioma": 5.661524937750073e-07,
+            "meningioma": 6.54241966913105e-06,
+            "notumor": 0.99998939037323,
+            "pituitary": 3.4828535717679188e-06
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0068_jpg.rf.abbe6d593143ed5bdd8c8f3a1f571e01.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9999978542327881,
+          "probs": {
+            "glioma": 5.740465880421652e-09,
+            "meningioma": 3.3651977560111845e-07,
+            "notumor": 1.80923416337464e-06,
+            "pituitary": 0.9999978542327881
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0079_jpg.rf.09b94acb605079a6206bba4517baa788.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.9753106832504272,
+          "probs": {
+            "glioma": 0.012771660462021828,
+            "meningioma": 0.0060540311969816685,
+            "notumor": 0.9753106832504272,
+            "pituitary": 0.005863609258085489
+          }
+        },
+        {
+          "filepath": "testing/glioma/Tr-gl_0086_jpg.rf.f1ce01b2e3b441ed96477dd64d6f0338.jpg",
+          "true": "glioma",
+          "pred": "pituitary",
+          "confidence": 0.9995834827423096,
+          "probs": {
+            "glioma": 2.361766564717982e-05,
+            "meningioma": 3.207679765182547e-05,
+            "notumor": 0.0003608256229199469,
+            "pituitary": 0.9995834827423096
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-100-_jpg.rf.69b1b8932d23d197930fd8bb33b957b6.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9881428480148315,
+          "probs": {
+            "glioma": 0.001415204955264926,
+            "meningioma": 0.006235940847545862,
+            "notumor": 0.9881428480148315,
+            "pituitary": 0.004205905366688967
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-101-_jpg.rf.b4664d46e09c2e7807c7d230c09787a3.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.583246648311615,
+          "probs": {
+            "glioma": 0.0001945783878909424,
+            "meningioma": 0.0016186075517907739,
+            "notumor": 0.4149401783943176,
+            "pituitary": 0.583246648311615
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-104-_jpg.rf.c95152a9c59129f5a8e6f188c8ef7564.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.8641698956489563,
+          "probs": {
+            "glioma": 4.6298839151859283e-05,
+            "meningioma": 0.00028267991729080677,
+            "notumor": 0.13550116121768951,
+            "pituitary": 0.8641698956489563
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-108-_jpg.rf.288b1964fc509d24b65542370a370c04.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9975765347480774,
+          "probs": {
+            "glioma": 0.00036893950891681015,
+            "meningioma": 0.000270703254500404,
+            "notumor": 0.9975765347480774,
+            "pituitary": 0.0017838043859228492
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-108-_jpg.rf.476437482163a186a80afcf163a9151e.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9978158473968506,
+          "probs": {
+            "glioma": 0.0002744154480751604,
+            "meningioma": 0.000254720012890175,
+            "notumor": 0.9978158473968506,
+            "pituitary": 0.0016550528816878796
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-112-_jpg.rf.5607a6f695cac65bf3ff5c31aed1627a.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9998060464859009,
+          "probs": {
+            "glioma": 7.702337461523712e-05,
+            "meningioma": 3.311840191599913e-05,
+            "notumor": 0.9998060464859009,
+            "pituitary": 8.377529593417421e-05
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-116-_jpg.rf.a23d0f6838a667fb10f28c5e92ca4916.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9981776475906372,
+          "probs": {
+            "glioma": 0.0012851643841713667,
+            "meningioma": 0.00044864328810945153,
+            "notumor": 0.9981776475906372,
+            "pituitary": 8.85183471837081e-05
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-117-_jpg.rf.00ecfa76206aebe3650913ae0ddc7155.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.99953693151474,
+          "probs": {
+            "glioma": 0.00027924907044507563,
+            "meningioma": 0.00017765442316886038,
+            "notumor": 0.99953693151474,
+            "pituitary": 6.132447651907569e-06
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-119-_jpg.rf.bc4a0f768e3655536cafeec8ef371231.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.7999287843704224,
+          "probs": {
+            "glioma": 0.004543487448245287,
+            "meningioma": 0.18097347021102905,
+            "notumor": 0.7999287843704224,
+            "pituitary": 0.014554260298609734
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-12-_jpg.rf.dcb06a3f3180d91ce572b444d9126db2.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9959676265716553,
+          "probs": {
+            "glioma": 2.0922894691466354e-05,
+            "meningioma": 0.0035399110056459904,
+            "notumor": 0.0004715921822935343,
+            "pituitary": 0.9959676265716553
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-120-_jpg.rf.02716335defc27223ab825eb7077d789.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9984797239303589,
+          "probs": {
+            "glioma": 2.3311042241402902e-05,
+            "meningioma": 0.0014723173808306456,
+            "notumor": 0.9984797239303589,
+            "pituitary": 2.464721183059737e-05
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-120-_jpg.rf.ee282a686753f27ddfc8cebbea3724da.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9949692487716675,
+          "probs": {
+            "glioma": 4.075156175531447e-05,
+            "meningioma": 0.0049650417640805244,
+            "notumor": 0.9949692487716675,
+            "pituitary": 2.4937837224570103e-05
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-121-_jpg.rf.7aac70b7b39c558d4d541e98498ee9a1.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9943171143531799,
+          "probs": {
+            "glioma": 0.00040040950989350677,
+            "meningioma": 0.005018793977797031,
+            "notumor": 0.9943171143531799,
+            "pituitary": 0.00026374394656158984
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-128-_jpg.rf.b244b4caf9295bd160f801d13f8e718c.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.8480730056762695,
+          "probs": {
+            "glioma": 0.0013680143747478724,
+            "meningioma": 0.0009887795895338058,
+            "notumor": 0.8480730056762695,
+            "pituitary": 0.14957019686698914
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-128-_jpg.rf.dd9f39b79fb5f0bc02398d610c05032b.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.8958823680877686,
+          "probs": {
+            "glioma": 0.0014795464230701327,
+            "meningioma": 0.0013227749150246382,
+            "notumor": 0.8958823680877686,
+            "pituitary": 0.10131525993347168
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-130-_jpg.rf.bde60fbe965840edc7744a9baa63ea48.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.99898761510849,
+          "probs": {
+            "glioma": 9.740459063323215e-05,
+            "meningioma": 0.0004740565491374582,
+            "notumor": 0.99898761510849,
+            "pituitary": 0.0004408698296174407
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-134-_jpg.rf.65135b052ea2bb8f2cb33004f4ca19d7.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9820712208747864,
+          "probs": {
+            "glioma": 2.9201177312643267e-05,
+            "meningioma": 0.00045504275476559997,
+            "notumor": 0.017444554716348648,
+            "pituitary": 0.9820712208747864
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-14-_jpg.rf.4dad147d54ad876ae8d97543f989c6e6.jpg",
+          "true": "meningioma",
+          "pred": "pituitary",
+          "confidence": 0.9166339039802551,
+          "probs": {
+            "glioma": 0.00012169973342679441,
+            "meningioma": 0.08255883306264877,
+            "notumor": 0.0006855878164060414,
+            "pituitary": 0.9166339039802551
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-152-_jpg.rf.aec6426f75c11cd592a75b69bbfa5e58.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.9897779226303101,
+          "probs": {
+            "glioma": 0.003989109303802252,
+            "meningioma": 0.0038975358474999666,
+            "notumor": 0.9897779226303101,
+            "pituitary": 0.0023355104494839907
+          }
+        },
+        {
+          "filepath": "testing/meningioma/m-157-_jpg.rf.e2f78840646fe84a8c9546f139431343.jpg",
+          "true": "meningioma",
+          "pred": "notumor",
+          "confidence": 0.8975539803504944,
+          "probs": {
+            "glioma": 0.004317365121096373,
+            "meningioma": 0.03278990462422371,
+            "notumor": 0.8975539803504944,
+            "pituitary": 0.0653388500213623
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0307_jpg.rf.13fe4c1d7edeb721c28b469b5157daa8.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.8445538878440857,
+          "probs": {
+            "glioma": 0.00039974847459234297,
+            "meningioma": 0.001342562958598137,
+            "notumor": 0.15370376408100128,
+            "pituitary": 0.8445538878440857
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0349_jpg.rf.0db447171e2326a06d7188966ca6b7b6.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.7620205879211426,
+          "probs": {
+            "glioma": 0.00032738278969191015,
+            "meningioma": 0.00033155636629089713,
+            "notumor": 0.23732036352157593,
+            "pituitary": 0.7620205879211426
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0356_jpg.rf.159bfb467c3eb83159be360ec3f0de3c.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.8327802419662476,
+          "probs": {
+            "glioma": 0.0007987445569597185,
+            "meningioma": 0.1642126739025116,
+            "notumor": 0.0022084880620241165,
+            "pituitary": 0.8327802419662476
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0357_jpg.rf.969786e3dc6cd1c7a05240ea173cbcbe.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9993746280670166,
+          "probs": {
+            "glioma": 1.9727094695554115e-06,
+            "meningioma": 5.224765118327923e-06,
+            "notumor": 0.0006181838107295334,
+            "pituitary": 0.9993746280670166
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0374_jpg.rf.bfd1d2b71f6706cae78e2a34e416e517.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9947959780693054,
+          "probs": {
+            "glioma": 7.545806965936208e-06,
+            "meningioma": 0.005123022478073835,
+            "notumor": 7.35787907615304e-05,
+            "pituitary": 0.9947959780693054
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0379_jpg.rf.50f4657565e3896171e89bdb53c8c331.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9998953938484192,
+          "probs": {
+            "glioma": 3.373332049250166e-07,
+            "meningioma": 3.216318509657867e-05,
+            "notumor": 7.212869968498126e-05,
+            "pituitary": 0.9998953938484192
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0385_jpg.rf.80dc039d34d72d8ca33f9709746bcbad.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9327142834663391,
+          "probs": {
+            "glioma": 0.004505464341491461,
+            "meningioma": 0.0306788831949234,
+            "notumor": 0.03210131824016571,
+            "pituitary": 0.9327142834663391
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0387_jpg.rf.c98b87ab0faf38ce45193d822109e509.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.995949923992157,
+          "probs": {
+            "glioma": 2.903367146700475e-07,
+            "meningioma": 0.0040457905270159245,
+            "notumor": 4.065686425747117e-06,
+            "pituitary": 0.995949923992157
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0388_jpg.rf.42bfcd976b436f5c454dd700963d234d.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9956755638122559,
+          "probs": {
+            "glioma": 3.82990219804924e-05,
+            "meningioma": 9.793923527467996e-05,
+            "notumor": 0.004188221879303455,
+            "pituitary": 0.9956755638122559
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0393_jpg.rf.bd8bcce394a7022b95c91f2e7671db39.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.6622881293296814,
+          "probs": {
+            "glioma": 0.00015271220763679594,
+            "meningioma": 0.33688482642173767,
+            "notumor": 0.0006742561818100512,
+            "pituitary": 0.6622881293296814
+          }
+        },
+        {
+          "filepath": "testing/pituitary/Tr-piTr_0005_jpg.rf.562178951f5c4418df6c25b1b56a4bd9.jpg",
+          "true": "pituitary",
+          "pred": "meningioma",
+          "confidence": 0.9529892206192017,
+          "probs": {
+            "glioma": 0.00012328515003900975,
+            "meningioma": 0.9529892206192017,
+            "notumor": 0.0005126623436808586,
+            "pituitary": 0.046374764293432236
+          }
+        }
+      ]
+    },
+    "original_benchmark": {
+      "title": "Original Model on Benchmark Test Set (80 images)",
+      "total": 80,
+      "accuracy": 0.9125,
+      "macro_precision": 0.9256410256410257,
+      "macro_recall": 0.9125,
+      "macro_f1": 0.9109810479375697,
+      "per_class": {
+        "glioma": {
+          "precision": 1.0,
+          "recall": 0.95,
+          "f1": 0.9743589743589743,
+          "support": 20
+        },
+        "meningioma": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 20
+        },
+        "notumor": {
+          "precision": 0.9333333333333333,
+          "recall": 0.7,
+          "f1": 0.8,
+          "support": 20
+        },
+        "pituitary": {
+          "precision": 0.7692307692307693,
+          "recall": 1.0,
+          "f1": 0.8695652173913044,
+          "support": 20
+        }
+      },
+      "confusion_matrix": [
+        [
+          19,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          14,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          20
+        ]
+      ],
+      "misclassified": [
+        {
+          "filepath": "testing/glioma/Tr-gl_0057_jpg.rf.bd30e4239c26fb121cf4fc0fae9ea160.jpg",
+          "true": "glioma",
+          "pred": "notumor",
+          "confidence": 0.565717875957489,
+          "probs": {
+            "glioma": 0.390325665473938,
+            "meningioma": 0.010343200527131557,
+            "notumor": 0.565717875957489,
+            "pituitary": 0.03361327946186066
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0307_jpg.rf.13fe4c1d7edeb721c28b469b5157daa8.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.655232310295105,
+          "probs": {
+            "glioma": 0.0014415632467716932,
+            "meningioma": 0.006722666323184967,
+            "notumor": 0.3366033732891083,
+            "pituitary": 0.655232310295105
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0379_jpg.rf.50f4657565e3896171e89bdb53c8c331.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.8882963061332703,
+          "probs": {
+            "glioma": 0.00017186766490340233,
+            "meningioma": 1.7414857211406343e-05,
+            "notumor": 0.11151452362537384,
+            "pituitary": 0.8882963061332703
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0382_jpg.rf.05b66604dba9747d46cf7d85a3f06033.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9991458654403687,
+          "probs": {
+            "glioma": 0.0003249889996368438,
+            "meningioma": 2.8782807930838317e-05,
+            "notumor": 0.000500387279316783,
+            "pituitary": 0.9991458654403687
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0387_jpg.rf.c98b87ab0faf38ce45193d822109e509.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9999538660049438,
+          "probs": {
+            "glioma": 2.0217948986100964e-06,
+            "meningioma": 4.23096844315296e-06,
+            "notumor": 3.992880374426022e-05,
+            "pituitary": 0.9999538660049438
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0388_jpg.rf.42bfcd976b436f5c454dd700963d234d.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9998800754547119,
+          "probs": {
+            "glioma": 7.440666377078742e-05,
+            "meningioma": 1.4318706234917045e-05,
+            "notumor": 3.118260428891517e-05,
+            "pituitary": 0.9998800754547119
+          }
+        },
+        {
+          "filepath": "testing/notumor/Tr-no_0393_jpg.rf.bd8bcce394a7022b95c91f2e7671db39.jpg",
+          "true": "notumor",
+          "pred": "pituitary",
+          "confidence": 0.9972554445266724,
+          "probs": {
+            "glioma": 0.0005038062809035182,
+            "meningioma": 7.979020665516146e-06,
+            "notumor": 0.002232709899544716,
+            "pituitary": 0.9972554445266724
+          }
+        }
+      ]
+    }
+  }
+}
